@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Bloc Jams</title>
-		<meta content="width=device-width, initial-scale=1" name="viewport">
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300" rel="stylesheet" type="text/css">
-		<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
-		<link href="styles/normalize.css" rel="stylesheet" type="text/css">
-		<link href="styles/main.css" rel="stylesheet" type="text/css">
-		<link href="styles/collection.css" rel="stylesheet" type="text/css">
-	</head>
-	<body class="collection" onload="
+
+<head>
+	<title>Bloc Jams</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300" rel="stylesheet" type="text/css">
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+	<link href="styles/normalize.css" rel="stylesheet" type="text/css">
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
+	<link href="styles/collection.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="collection" onload="
     BlocJams.collection.loadCollection(
       BlocJams.albums.getAll(),
       document.querySelector('.album-covers')
     );
     ">
-		<nav class="navbar">
-			<a class="logo" href="index.html">
-				<img alt="bloc jams logo" src="assets/images/bloc_jams_logo.png">
-			</a>
-			<div class="links-container">
-				<a class="navbar-link" href="collection.html">Collection</a>
-			</div>
-		</nav>
+	<nav class="navbar">
+		<a class="logo" href="index.html">
+			<img alt="bloc jams logo" src="assets/images/bloc_jams_logo.png">
+		</a>
+		<div class="links-container">
+			<a class="navbar-link" href="collection.html">Collection</a>
+		</div>
+	</nav>
 
-		<section class="album-covers container clearfix"></section>
-    <script src="scripts/app.js"></script>
-		<script src="scripts/util.js"></script>
-		<script src="scripts/mock-albums.js"></script>
-		<script src="scripts/collection.js"></script>
-	</body>
+	<section class="album-covers container clearfix"></section>
+	<script src="scripts/app.js"></script>
+	<script src="scripts/util.js"></script>
+	<script src="scripts/mock-albums.js"></script>
+	<script src="scripts/collection.js"></script>
+</body>
+
 </html>
