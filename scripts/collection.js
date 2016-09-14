@@ -1,0 +1,3 @@
+BlocJams.collection = (function() {
+
+}());
