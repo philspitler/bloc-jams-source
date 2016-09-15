@@ -13,8 +13,7 @@ BlocJams.albums = (function() {
                 { name: 'Pink', length: '3:21' },
                 { name: 'Magenta', length: '2:15' }
             ]
-        }
-    ,
+        },
         {
             name: 'The Telephone',
             artist: 'Guglielmo Marconi',
@@ -33,11 +32,6 @@ BlocJams.albums = (function() {
     return {
     	getAll: function() {
     		return allAlbums;
-    	},
-    	getOne: function(albumName) {
-    		return allAlbums.filter(function(element) {
-    			return element.name === albumName;
-    		})[0];
     	}
-    }
+    };
 }());

@@ -19,7 +19,10 @@ BlocJams.collection = (function() {
 		collectionContainer.innerHTML = '';
 		for (key in albums) {
 			var album = albums[key];
-			collectionContainer.innerHTML += collectionItemTemplate(album.name, album.artist, album.albumArtUrl, album.songs.length);
+			collectionContainer.innerHTML += collectionItemTemplate(album.name,
+				album.artist,
+				album.albumArtUrl,
+				album.songs.length);
 		}
 	};
 
